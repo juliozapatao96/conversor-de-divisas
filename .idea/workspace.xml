@@ -5,19 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b3adefb-ddba-4dff-a7d4-74848bf9e032" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/google_code_gson.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conversor-de-divisas.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/alura/condivisas/main/main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/alura/condivisas/modelos/ApiResponseC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/alura/condivisas/records/PairConversion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/alura/condivisas/services/ApiERService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/alura/condivisas/utils/UserInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/alura/condivisas/utils/Validator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/alura/condivisas/main/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/alura/condivisas/main/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/alura/condivisas/utils/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/alura/condivisas/utils/UserInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/alura/condivisas/utils/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/alura/condivisas/utils/Validator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

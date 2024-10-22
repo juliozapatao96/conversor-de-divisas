@@ -13,22 +13,37 @@ public class main {
         ApiERService apiERService = new ApiERService();
         UserInterface ui = new UserInterface();
         Validator validator = new Validator();
-
         // Obtener la lista de códigos de divisas
         Map<String, String> currenciesCodes = apiERService.getSupportedCurrencies();
 
-        var codeBase = ui.requestCode(true);
-        var codeTarget = ui.requestCode(false);
-        var amount = ui.requestAmount();
+        while (true){
+            String option = ui.showrMenuUser();
+            if (option.equalsIgnoreCase("4")) {
+                break;
+            } else if (option.equalsIgnoreCase("3")) {
+                ui.showMessage("Divisas soportadas:");
+                for (Map.Entry<String, String> entry : currenciesCodes.entrySet()) {
+                    System.out.println(entry.getKey() + ": " + entry.getValue());
+                }
+            } else if (option.equalsIgnoreCase("2")) {
+                String codeBase = ui.requestCode(true);
+                String codeTarget = ui.requestCode(false);
+                String amount = ui.requestAmount();
 
-        validator.validateCode(codeBase, currenciesCodes);
-        validator.validateCode(codeTarget, currenciesCodes);
+                validator.validateCode(codeBase, currenciesCodes, false);
+                validator.validateCode(codeTarget, currenciesCodes, false);
+
+                PairConversion data = apiERService.convertCurrency(codeBase,codeTarget,amount);
+                System.out.println(data);
+            } else if (option.equalsIgnoreCase("1")) {
+                String codeValidate = ui.requestCode();
+                validator.validateCode(codeValidate, currenciesCodes, true);
+            } else {
+                ui.showMessage("Debe ingresar una opción válida. Intente nuevamente.\n");
+            }
 
 
-        PairConversion data = apiERService.convertCurrency(codeBase,codeTarget,amount);
-        System.out.println(data);
-
-
+        }
 
 
         // Mostrar los códigos y nombres de divisas
