@@ -78,10 +78,10 @@ private static final String KEY = "e303dda9ee4fa7a1918781b5";  // Reemplaza este
 
 A continuación se presentan algunas capturas de pantalla del proyecto:
 
-![Imagen demostrativa 1](media/images/img-1.png)
+![Imagen demostrativa 1](img-1.png)
 *Menú principal - parte 1*
 
-![Imagen demostrativa 2](media/images/img-2.png)
+![Imagen demostrativa 2](img-2.png)
 *Menú principal - parte 2*
 
-[Video de demostración del proyecto](media/video/video-1.mp4)
+[Video de demostración del proyecto](video-2.mp4)
