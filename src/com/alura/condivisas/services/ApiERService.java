@@ -51,7 +51,7 @@ public class ApiERService {
     }
 
 
-    // Método para obtener la lista de códigos de divisas soportados
+    // Metodo para obtener la lista de códigos de divisas soportados
     public Map<String, String> getSupportedCurrencies() {
         String url = BASE_URL + KEY + "/codes";
 

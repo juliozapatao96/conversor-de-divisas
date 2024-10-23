@@ -22,37 +22,31 @@ public class main {
                 break;
             } else if (option.equalsIgnoreCase("3")) {
                 ui.showMessage("Divisas soportadas:");
-                for (Map.Entry<String, String> entry : currenciesCodes.entrySet()) {
-                    System.out.println(entry.getKey() + ": " + entry.getValue());
-                }
+                validator.showCurriencies(currenciesCodes);
             } else if (option.equalsIgnoreCase("2")) {
-                String codeBase = ui.requestCode(true);
-                String codeTarget = ui.requestCode(false);
-                String amount = ui.requestAmount();
+                try{
+                    String codeBase = ui.requestCode(true);
+                    boolean resultCodeBase = validator.validateCode(codeBase, currenciesCodes, false);
+                    if (!resultCodeBase){continue;}
 
-                validator.validateCode(codeBase, currenciesCodes, false);
-                validator.validateCode(codeTarget, currenciesCodes, false);
+                    String codeTarget = ui.requestCode(false);
+                    boolean resultCodeTarget =validator.validateCode(codeTarget, currenciesCodes, false);
+                    if (!resultCodeTarget){continue;}
 
-                PairConversion data = apiERService.convertCurrency(codeBase,codeTarget,amount);
-                System.out.println(data);
+                    String amount = ui.requestAmount();
+
+                    PairConversion data = apiERService.convertCurrency(codeBase,codeTarget,amount);
+
+                    ui.showMessage("El monto de "+amount+" "+codeBase+" corresponde a "+data.conversion_result()+" "+codeTarget);
+                }catch (RuntimeException e){
+                    ui.showMessage("Error: "+e.getMessage());
+                }
             } else if (option.equalsIgnoreCase("1")) {
                 String codeValidate = ui.requestCode();
                 validator.validateCode(codeValidate, currenciesCodes, true);
             } else {
                 ui.showMessage("Debe ingresar una opción válida. Intente nuevamente.\n");
             }
-
-
         }
-
-
-        // Mostrar los códigos y nombres de divisas
-        /*
-        System.out.println("Divisas soportadas:");
-        for (Map.Entry<String, String> entry : currenciesCodes.entrySet()) {
-            System.out.println(entry.getKey() + ": " + entry.getValue());
-        }
-        */
-
     }
 }

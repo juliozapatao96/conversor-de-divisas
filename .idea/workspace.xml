@@ -7,7 +7,7 @@
     <list default="true" id="6b3adefb-ddba-4dff-a7d4-74848bf9e032" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/alura/condivisas/main/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/alura/condivisas/main/main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/alura/condivisas/utils/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/alura/condivisas/utils/UserInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/alura/condivisas/services/ApiERService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/alura/condivisas/services/ApiERService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/alura/condivisas/utils/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/alura/condivisas/utils/Validator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
